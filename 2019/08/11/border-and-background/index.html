@@ -2,19 +2,24 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>Matt的小站</title>
+<title>一些CSS背景和边框的小技巧 - Matt的小站</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Matt的小站">
-<meta property="og:url" content="http://yoursite.com/index.html">
+    <meta name="description" content="CSS盒模型在正篇开始之前，我们先来复习一下CSS的标准盒模型。  一、半透明边框现在我们拥有一个矩形，为了接下来体现透明边框的效果，我们加上一个图片作为背景。  要实现一个半透明的边框，我们第一反应是使用rgba作为边框的颜色，但是看上去半透明边框并没有生效，why? 1234div &amp;#123;  background: white;  border: 20px solid rgba(255,">
+<meta name="keywords" content="border-clip,border-images">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些CSS背景和边框的小技巧">
+<meta property="og:url" content="http://yoursite.com/2019/08/11/border-and-background/index.html">
 <meta property="og:site_name" content="Matt的小站">
+<meta property="og:description" content="CSS盒模型在正篇开始之前，我们先来复习一下CSS的标准盒模型。  一、半透明边框现在我们拥有一个矩形，为了接下来体现透明边框的效果，我们加上一个图片作为背景。  要实现一个半透明的边框，我们第一反应是使用rgba作为边框的颜色，但是看上去半透明边框并没有生效，why? 1234div &amp;#123;  background: white;  border: 20px solid rgba(255,">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:updated_time" content="2019-08-11T14:10:39.016Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Matt的小站">
+<meta name="twitter:title" content="一些CSS背景和边框的小技巧">
+<meta name="twitter:description" content="CSS盒模型在正篇开始之前，我们先来复习一下CSS的标准盒模型。  一、半透明边框现在我们拥有一个矩形，为了接下来体现透明边框的效果，我们加上一个图片作为背景。  要实现一个半透明的边框，我们第一反应是使用rgba作为边框的颜色，但是看上去半透明边框并没有生效，why? 1234div &amp;#123;  background: white;  border: 20px solid rgba(255,">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
 
@@ -99,7 +104,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="Matt的小站" height="28">
+                <img src="/images/logo.png" alt="一些CSS背景和边框的小技巧" height="28">
             
             </a>
         </div>
@@ -107,7 +112,7 @@ var _hmt = _hmt || [];
             
             <div class="navbar-start">
                 
-                <a class="navbar-item is-active" href="/">首页</a>
+                <a class="navbar-item" href="/">首页</a>
                 
                 <a class="navbar-item" href="/archives">归档</a>
                 
@@ -133,8 +138,7 @@ var _hmt = _hmt || [];
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-9-tablet is-9-desktop is-9-widescreen has-order-2 column-main">
-    <div class="card">
+                <div class="column is-9-tablet is-9-desktop is-9-widescreen has-order-2 column-main"><div class="card">
     
     <div class="card-content article ">
         
@@ -153,7 +157,7 @@ var _hmt = _hmt || [];
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2019/08/11/border-and-background/">一些CSS背景和边框的小技巧</a>
+                一些CSS背景和边框的小技巧
             
         </h1>
         <div class="content">
@@ -233,6 +237,15 @@ var _hmt = _hmt || [];
 
         </div>
         
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/border-clip/">border-clip</a>, <a class="has-link-grey -link" href="/tags/border-images/">border-images</a>
+                </div>
+            </div>
+        </div>
+        
         
         
     </div>
@@ -244,7 +257,29 @@ var _hmt = _hmt || [];
 
 
 
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.4.1/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: 'd13d5343c7697090cd6a',
+        clientSecret: 'df2730699a84ecf5bef2b15168ddd56f8d00a29d',
+        id: '4a88796830124c79e9736650f77867ec',
+        repo: 'blog-comment',
+        owner: 'mattzh',
+        admin: "mattzh",
+        createIssueManually: false,
+        distractionFreeMode: false
+    })
+    gitalk.render('comment-container')
+</script>
 
+    </div>
+</div>
 </div>
                 
 
@@ -386,7 +421,7 @@ var _hmt = _hmt || [];
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="Matt的小站" height="28">
+                    <img src="/images/logo.png" alt="一些CSS背景和边框的小技巧" height="28">
                 
                 </a>
                 <p class="is-size-7">
